@@ -16,6 +16,44 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+ 
+.orcid-icon {
+    background-image: url("https://raw.githubusercontent.com/Shlhnj/redesigned-adventure/refs/heads/main/img/icon/orcid.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+  .invert-icon {
+    filter: invert(1);
+}
+  
+  #contact a:hover {
+    color: gold;
+    
+  }
+
+  
+ /* 
+    div.imageprofile img {
+    opacity: 1
+  }
+  
+  div.imageprofile img:hover {
+    opacity: 0
+  }
+ 
+  @keyframes homeprofile {
+    0%    {opacity 1}
+    20%   {opacity: 0.8}
+    40%   {opacity: 0.6}
+    60%   {opacity: 0.4}
+    80%   {opacity: 0.2}
+    100%  {opacity:0}
+  }
+  */
 </style>
 </head>
 <body class="w3-black">
@@ -23,17 +61,17 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <img src="img/id/face_contour_white.png" style="width:100%">
+  <!--<img src="https://raw.githubusercontent.com/Shlhnj/redesigned-adventure/refs/heads/main/img/id/face_contour_white.png" style="width:100%">-->
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-home w3-xxlarge"></i>
+    <i class="fa fa-crosshairs w3-xxlarge" style="margin-top:25%"></i>
     <p>HOME</p>
   </a>
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
+    <i class="fa fa-book w3-xxlarge"></i>
     <p>ABOUT</p>
   </a>
   <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
+    <i class="fa fa-cube w3-xxlarge"></i>
     <p>WORKS</p>
   </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
@@ -59,52 +97,54 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Muhammad Shulhan J</h1>
     <p>Bachelor of Science,
     </br> Oceanography</p>
-    <img src="img/id/sunglass_nobg_resize_2.png" alt="boy" class="w3-image" width="330.6" height="369.3" style="border: 2px solid black;border-radius:50%">
+  <div class="imageprofile">
+
+        <img src="https://raw.githubusercontent.com/Shlhnj/redesigned-adventure/refs/heads/main/img/id/topi_camo.jpg" alt="Me" class="w3-image" width="40%" height="auto" style="border: 2px solid black;border-radius:50%;">
+    
+  </div>
   </header>
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">My Name</h2>
+    <h2 class="w3-text-light-grey">About Me</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p>I hold a Bachelor degree in Oceanography with a strong background on satellite remote sensing, GIS, cartography, and ecological modelling. I have a proven track records of both technical and managerial skills developed through conducting research, experience leading teams, and writing scientific articles.
     </p>
     <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
     <p class="w3-wide">Cartography</p>
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+      <div class="w3-dark-grey" style="height:28px;width:75%"></div>
     </div>
     <p class="w3-wide">Ecological Modelling</p>
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
     </div>
     <p class="w3-wide">Scientific Writing</p>
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:75%"></div>
+      <div class="w3-dark-grey" style="height:28px;width:60%"></div>
     </div><br>
     
     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">11+</span><br>
-        Partners
+        <span class="w3-xlarge">3.58</span><br>
+        GPA
       </div>
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
+        <span class="w3-xlarge">7.5</span><br>
+        IELTS Band
       </div>
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
+        <span class="w3-xlarge">200+</span><br>
+        Kilometers of running
       </div>
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
+        <span class="w3-xlarge">15+</span><br>
+        Projects
       </div>
     </div>
 
     <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <a href="https://raw.githubusercontent.com/Shlhnj/redesigned-adventure/refs/heads/main/cv.pdf" target="_blank" rel="noopener noreferrer"><i class="fa fa-download"></i> Download Resume
+      <a href="https://raw.githubusercontent.com/Shlhnj/redesigned-adventure/refs/heads/main/cv.pdf" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><i class="fa fa-download"></i> Download Resume
     </button></a>
     
 
@@ -138,15 +178,40 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-    </div><br>
-    
+<!--      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p> 
+      <a href="https://wa.me/628982909751" target="_blank" style="text-decoration:none;">
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +62 89 829 09 751</p></a> -->
+      <a href="mail.to:mail.shulhan@gmail.com" target="_blank" style="text-decoration:none;">
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity"> </i> mail.shulhan@gmail.com</p></a>
+       <a href="linkedin.com/in/mshulhanj" target="_blank" style="text-decoration:none;">
+      <p><i class="fa fa-linkedin fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity"> </i> linkedin.com/in/mshulhanj</p></a>
+       <a href="https://github.com/Shlhnj" target="_blank" style="text-decoration:none;">
+      <p><i class="fa fa-github fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity"> </i> https://github.com/Shlhnj</p></a>
+       <a href="https://www.instagram.com/shlhn._/" target="_blank" style="text-decoration:none;">
+      <p><i class="fa fa-instagram fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity"> </i> https://www.instagram.com/shlhn._/</p></a>      
+      
+ 
+    <!--<a href="https://orcid.org/your-orcid-id" target="_blank">
+      <img src="https://raw.githubusercontent.com/Shlhnj/redesigned-adventure/refs/heads/main/img/icon/orcid.svg" 
+         alt="ORCID Icon" width="40" height="auto" class="invert-icon"></a>
+-->
+ 
+    <a href="https://www.researchgate.net/profile/Muhammad-Jihadi-2" target="_blank" style="text-decoration:none;">
+      <img src="https://raw.githubusercontent.com/Shlhnj/redesigned-adventure/refs/heads/main/img/icon/researchgate.svg"
+           alt="ORCID Icon" width="50" height="auto" class="invert-icon" style="margin-left:;"> &nbsp &nbsp Researchgate Profile </a>
+    <br>
+      
+         </a>
+  
+
+
+   
   <!-- End Contact Section -->
   </div>
   
-    <!-- Footer -->
+<!--*
+
+    <!-- Footer 
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
@@ -155,8 +220,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
     <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <!-- End footer -->
+  <!-- End footer 
   </footer>
+    -->
 
 <!-- END PAGE CONTENT -->
 </div>
